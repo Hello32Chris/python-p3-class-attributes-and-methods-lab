@@ -49,6 +49,9 @@ class Song:
         else:
             cls.genre_count[genre] = 1
 
+
+    # HERE I CHECK FOR EVERYTIME A SONG IS SUBMITTED, IF THE ARTIST ALREADY EXISTS IN THE LIST -- IF SO I ADD 1 TO THE COUNT in the class attribute I created above called  artist_count = {}
+
     @classmethod
     def add_to_artist_count(cls, artist):
         if artist in cls.artist_count:
@@ -56,11 +59,3 @@ class Song:
         else:
             cls.artist_count[artist] = 1
 
-
-
-
-    # Also keep track of number of songs in each genre
-    #Song.genre_count
-
-    # Also keep track of number of songs each artist is responsible for
-    # Song.artist_count
